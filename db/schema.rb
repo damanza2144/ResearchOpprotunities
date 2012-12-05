@@ -40,6 +40,21 @@ ActiveRecord::Schema.define(:version => 20121203044055) do
     t.string   "student_research_assistant"
     t.datetime "created_at",                 :null => false
     t.datetime "updated_at",                 :null => false
+    t.boolean  "open"
+    t.boolean  "active"
+    t.boolean  "closed"
+  end
+
+  create_table "students", :force => true do |t|
+    t.string   "firstName"
+    t.string   "lastName"
+    t.string   "email"
+    t.string   "minor"
+    t.string   "major"
+    t.decimal  "GPA"
+    t.text     "interests"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

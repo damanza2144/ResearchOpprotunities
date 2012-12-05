@@ -1,13 +1,126 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+ 
+/* Global styles */
+
+#profile #notice {
+        color: #000;
+        border: 2px solid red;
+        padding: 1em;
+        margin-bottom: 2em;
+        background-color: #f0f0f0;
+        font: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+#profile h1 {
+        font:  150%  cambria;
+        color: #226;
+        border-bottom: 3px dotted #77d;
+}
+
+/* Styles for students/index */
+
+#student_list table {
+        border-collapse: collapse;
+}
+
+#student_list table tr td {
+        padding: 5px;
+        vertical-align: top;
+}
+
+
+#student_list .list_description {
+  width:        60%;
+}
+
+#student_list .list_description dl {
+        margin: 0;
+}
+
+#student_list .list_description dt {
+	color:        #244;
+	font-weight:  bold;
+	font-size:    larger;
+}
+
+#student_list .list_description dd {
+        margin: 0;
+}
+
+#student_list .list_actions {
+  font-size:    small;
+  text-align:   right;
+  padding-left: 1em;
+}
+
+#student_list .list_line_even {
+  background:   #e0f8f8;
+}
+
+#student_list .list_line_odd {
+  background:   #f8b0f8;
+}
+
+/* An entry in the profile catalog */
+
+#profile  .entry {
+  overflow: auto;
+  margin-top: 1em;
+  border-bottom: 1px dotted #77d;
+}
+
+#profile  .title {
+  font-size: 120%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#profile .entry img {
+  width: 80px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  float: left;
+}
+
+
+#profile .entry h3 {
+ margin-top: 0;
+ margin-bottom: 2px;
+ color: #227;
+}
+
+#profile .entry p {
+ margin-top: 0.5em; 
+ margin-bottom: 0.8em; 
+}
+
+#profile .entry .price_line {
+ clear: both;
+ margin-bottom: 0.5em;
+}
+
+#profile .entry .add_to_cart {
+  position: relative;
+}
+
+#profile .entry  .GPA {
+  color: #44abcf;
+  font-weight: bold;
+  margin-right: 2em;
+}
+
+/* Styles for main page */
+#banner {
+background: #9c9;
+padding-top: 10px;
+padding-bottom: 10px;
+border-bottom: 2px solid;
+font: medium 40px/40px , "Comic Sans MS", cursive, sans-serif;
+color: #282;
+text-align: center;
+}
+#banner img {
+float: left;
+}
+#columns {
+width: 500px;
+}
