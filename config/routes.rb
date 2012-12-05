@@ -1,4 +1,5 @@
 ResearchOpprotunities::Application.routes.draw do
+
   get "profile/index"
 
   resources :advisors

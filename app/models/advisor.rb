@@ -1,3 +1,9 @@
 class Advisor < ActiveRecord::Base
-  attr_accessible :contact_info, :degrees, :interests, :password, :username
+	
+	default_scope :order => 'last_name'
+	
+	attr_accessible :first_name, :last_name, :email, :phone_number
+	
+	validates :first_name, :last_name, :email, :phone_number, :presence => true
+	
 end

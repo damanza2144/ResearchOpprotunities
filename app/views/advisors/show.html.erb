@@ -1,28 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-	<b>Username:</b>
-	<%= @advisor.username %>
+	<b>First Name:</b>
+	<%= @advisor.first_name %>
 </p>
 
 <p>
-	<b>Password:</b>
-	<%= @advisor.password %>
+	<b>Last Name:</b>
+	<%= @advisor.last_name %>
 </p>
 
 <p>
-	<b>Contact info:</b>
-	<%= @advisor.contact_info %>
+	<b>Email:</b>
+	<%= @advisor.email %>
 </p>
 
 <p>
-	<b>Interests:</b>
-	<%= @advisor.interests %>
-</p>
-
-<p>
-	<b>Degrees:</b>
-	<%= @advisor.degrees %>
+	<b>Phone Number:</b>
+	<%= @advisor.phone_number %>
 </p>
 
 <%= link_to 'Edit', edit_advisor_path(@advisor) %> |
