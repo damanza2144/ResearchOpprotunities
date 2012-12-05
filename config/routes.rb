@@ -1,7 +1,18 @@
+<<<<<<< HEAD
+ResearchOpprotunities::Application.routes.draw do
+  get "profile/index"
+=======
 ResearchOpprotunities::Application.routes.draw do
   resources :advisors
 
   resources :researches
+>>>>>>> cde4bb65a9ffe997f5543f283268cb220cb30ce4
+
+  resources :students
+  
+  resources :researches
+
+  root :to => 'profile#index', :as => 'profile'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,7 @@
+Thu, 29 Nov 2012 18:40:27 -0700
+doc/README_FOR_APP	Thu, 08 Nov 2012 13:35:12 -0700
+app/helpers/application_helper.rb	Thu, 08 Nov 2012 13:35:12 -0700
+app/helpers/researches_helper.rb	Thu, 08 Nov 2012 14:07:51 -0700
+app/controllers/researches_controller.rb	Thu, 29 Nov 2012 18:40:16 -0700
+app/controllers/application_controller.rb	Thu, 08 Nov 2012 13:35:12 -0700
+app/models/research.rb	Thu, 08 Nov 2012 14:07:51 -0700

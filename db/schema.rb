@@ -11,6 +11,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(:version => 20121203001806) do
+=======
 ActiveRecord::Schema.define(:version => 20121203044055) do
 
   create_table "advisors", :force => true do |t|
@@ -22,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20121203044055) do
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
+>>>>>>> cde4bb65a9ffe997f5543f283268cb220cb30ce4
 
   create_table "researches", :force => true do |t|
     t.string   "title"
@@ -42,4 +46,19 @@ ActiveRecord::Schema.define(:version => 20121203044055) do
     t.datetime "updated_at",                 :null => false
   end
 
+<<<<<<< HEAD
+  create_table "students", :force => true do |t|
+    t.string   "firstName"
+    t.string   "lastName"
+    t.string   "email"
+    t.string   "minor"
+    t.string   "major"
+    t.decimal  "GPA"
+    t.text     "interests"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+=======
+>>>>>>> cde4bb65a9ffe997f5543f283268cb220cb30ce4
 end

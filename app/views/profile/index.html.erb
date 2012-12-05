@@ -1,0 +1,21 @@
+<% if notice %>
+<p id="notice" ><%= notice %></p>
+<% end %>
+<h1>Your Student Profile</h1>
+<% @students.each do |student| %>
+<div class="entry" >
+<h3><%= student.lastName %> <%= student.firstName %></h3>
+<div class="GPA_line" >
+<span class="GPA" >GPA: <%= student.GPA %></span>
+</div>
+<div class="major_line" >
+<span class="major" >Major: <%= student.major %></span>
+</div>
+<div class="minor_line" >
+<span class="minor" >Minor: <%= student.minor %></span>
+</div>
+<div class="interests_line" >
+<span class="interests" >Interests: <%= student.interests %></span>
+</div>
+</div>
+<% end %>
