@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Student Profile</title>
+	<title>Advisor Profile</title>
 	<%= stylesheet_link_tag "scaffold" %>
 	<%= stylesheet_link_tag "Profile", :media => "all" %>
 	<%= javascript_include_tag :defaults %>
@@ -9,13 +9,15 @@
 </head>
 <body id="profile" >
 	<div id="banner" >
-		<%= @page_title || "UNM Student Profile" %>
+		<%= @page_title || "UNM Advisor Profile" %>
 	</div>
 	<div id="columns" >
 		<div id="side" >
-			<a href="http://www...." >Search</a><br />
-			<a href="http://www..../faq" >My Profile</a><br />
-			<a href="http://www..../news" >My Projects</a><br />
+			<%= link_to 'Open for sign up', researches_path %><br/>
+			<%= link_to 'Active', researches_path %><br/>
+			<%= link_to 'Closed', researches_path %><br/>
+			<%= link_to 'Students', students_path %><br/>
+			<%= link_to 'New', researches_path %><br/>
 		</div>
 		<div id="main" >
 			<%= yield %>

@@ -2,39 +2,37 @@
 /* Global styles */
 
 #profile #notice {
-        color: #000;
-        border: 2px solid red;
-        padding: 1em;
-        margin-bottom: 2em;
-        background-color: #f0f0f0;
-        font: large "Comic Sans MS", cursive, sans-serif;
+	color: #000;
+	border: 2px solid red;
+	padding: 1em;
+	margin-bottom: 2em;
+	background-color: #f0f0f0;
+	font: large "Comic Sans MS", cursive, sans-serif;
 }
 
-
 #profile h1 {
-        font:  150%  "Cambria";
-        color: #226;
-        border-bottom: 3px dotted #77d;
+	font:  150%  "Cambria";
+	color: #226;
+	border-bottom: 3px dotted #77d;
 }
 
 /* Styles for students/index */
 
 #student_list table {
-        border-collapse: collapse;
+	border-collapse: collapse;
 }
 
 #student_list table tr td {
-        padding: 5px;
-        vertical-align: top;
+	padding: 5px;
+	vertical-align: top;
 }
 
-
 #student_list .list_description {
-  width:        60%;
+	width: 60%;
 }
 
 #student_list .list_description dl {
-        margin: 0;
+	margin: 0;
 }
 
 #student_list .list_description dt {
@@ -44,79 +42,83 @@
 }
 
 #student_list .list_description dd {
-        margin: 0;
+	margin: 0;
 }
 
 #student_list .list_actions {
-  font-size:    small;
-  text-align:   right;
-  padding-left: 1em;
+	font-size:    small;
+	text-align:   right;
+	padding-left: 1em;
 }
 
 #student_list .list_line_even {
-  background:   #e0f8f8;
+	background:   #e0f8f8;
 }
 
 #student_list .list_line_odd {
-  background:   #f8b0f8;
+	background:   #f8b0f8;
 }
 
 /* An entry in the profile catalog */
 
 #profile  .entry {
-  overflow: auto;
-  margin-top: 1em;
-  border-bottom: 1px dotted #77d;
+	overflow: auto;
+	margin-top: 1em;
+	border-bottom: 1px dotted #77d;
 }
 
 #profile  .title {
-  font-size: 440%;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 440%;
+	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 #profile .entry h3 {
- margin-top: 0;
- margin-bottom: 2px;
- color: #227;
+	margin-top: 0;
+	margin-bottom: 2px;
+	color: #227;
 }
 
 #profile .entry p {
- margin-top: 0.5em; 
- margin-bottom: 0.8em; 
+	margin-top: 0.5em; 
+	margin-bottom: 0.8em; 
 }
 
 #profile .entry .price_line {
- clear: both;
- margin-bottom: 0.5em;
+	clear: both;
+	margin-bottom: 0.5em;
 }
 
 /* Styles for main page */
 #banner {
-background: #7FFFD4;
-padding-top: 10px;
-padding-bottom: 10px;
-border-bottom: 2px solid;
-font: x-large "Georgia", cursive, sans-serif;
-color: #000000;
-text-align: center;
+	background: #7FFFD4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid;
+	font: x-large "Georgia", cursive, sans-serif;
+	color: #000000;
+	text-align: center;
+}
+
 #columns {
-background: #141;
-width: 120px;
+	background: #141;
 }
+
 #main {
-margin-left: 17em;
-padding-top: 4ex;
-padding-left: 500px;
-background: white;
+	margin-left: 17em;
+	padding-top: 4ex;
+	padding-left: 2em;
+	background: white;
 }
+
 #side {
-float: left;
-padding-top: 1em;
-padding-bottom: 1em;
-width: 12em;
-background: #141;
+	float: left;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 12em;
+	background: #141;
 }
+
 #side a {
-color: #333CC0;
-font-size: medium;
+	color: #333CC0;
+	font-size: medium;
 }

@@ -2,11 +2,11 @@ ResearchOpprotunities::Application.routes.draw do
 
   get "profile/index"
 
-  resources :advisors
-
   resources :students
   
   resources :researches
+
+  resources :advisors
 
   root :to => 'profile#index', :as => 'profile'
 
