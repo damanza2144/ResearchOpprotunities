@@ -11,6 +11,8 @@ ResearchOpprotunities::Application.routes.draw do
   resources :advisors do
     resources :researches
   end
+  
+  #resources :researches
 
   root :to => 'profile#index', :as => 'profile'
 

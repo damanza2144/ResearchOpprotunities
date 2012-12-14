@@ -8,6 +8,7 @@
 		<th></th>
 		<th></th>
 		<th></th>
+		<th></th>
 	</tr>
 <% @advisors.each do |advisor| %>
 	<tr>
@@ -15,6 +16,11 @@
 		<td><%= advisor.last_name %></td>
 		<td><%= advisor.email %></td>
 		<td><%= advisor.phone_number %></td>
+		<td>
+			<% advisor.researches.each do |research| %>
+				<%= link_to @research.title, advisor_researches_index_path(@research.id) %> <br>
+			<% end %>
+		</td>
 		<td><%= link_to 'Show', advisor %></td>
 		<td><%= link_to 'Edit', edit_advisor_path(advisor) %></td>
 		<td><%= link_to 'Destroy', advisor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
