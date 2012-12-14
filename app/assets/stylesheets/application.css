@@ -1,4 +1,19 @@
- 
+/*
+ * This is a manifiest tile that'll be compiled into application.css, which
+ * will include all the files listed below.
+ *
+ * Any CSS and SCSS file withing this directory, lib/assets/stylesheets,
+ * vendor/assets/stylesheets, or vendor/assets/styleshieets of plugins, if any,
+ * can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear
+ * at the top of the compiled file, but it's generally better to create a new
+ * file per style scape.
+ *
+ *= require_self
+ *= require_tree
+ */
+
 /* Global styles */
 
 #profile #notice {

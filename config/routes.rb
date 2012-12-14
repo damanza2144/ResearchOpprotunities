@@ -12,7 +12,7 @@ ResearchOpprotunities::Application.routes.draw do
     resources :researches
   end
   
-  #resources :researches
+  resources :researches
 
   root :to => 'profile#index', :as => 'profile'
 

@@ -25,6 +25,8 @@ class ResearchesController < ApplicationController
   # GET /researches/new.json
   def new
     @research = Research.new
+    @advisor = Advisor.find(params[:advisor_id])
+    @research.contact_info = @advisor.email
 
     respond_to do |format|
       format.html # new.html.erb
@@ -40,7 +42,8 @@ class ResearchesController < ApplicationController
   # POST /researches
   # POST /researches.json
   def create
-    @research = Research.new(params[:research])
+    @advisor = Advisor.find(params[:advisor_id])
+    @research = @advisor.researches.create!(params[:research])
 
     respond_to do |format|
       if @research.save

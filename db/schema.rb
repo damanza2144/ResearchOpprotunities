@@ -23,39 +23,39 @@ ActiveRecord::Schema.define(:version => 20121214002015) do
   end
 
   create_table "researches", :force => true do |t|
-    t.string "title"
-    t.string "contact_info"
-    t.string "academic_unit"
-    t.string "work_period"
-    t.string "academic_level"
-    t.string "gpa"
-	t.text "class_required"
-    t.text "requirements"
-    t.text "description"
-    t.date "application_deadline"
-    t.boolean "paid"
-    t.string "unmjobs_number"
-    t.string "unmjobs_name"
-    t.string "student_research_assistant"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.boolean "open"
-    t.boolean "active"
-    t.boolean "closed"
-    t.integer "advisor_id"
+    t.string   "title"
+    t.string   "contact_info"
+    t.string   "academic_unit"
+    t.string   "work_period"
+    t.string   "academic_level"
+    t.string   "gpa"
+    t.text     "class_required"
+    t.text     "requirements"
+    t.text     "description"
+    t.date     "application_deadline"
+    t.boolean  "paid"
+    t.string   "unmjobs_number"
+    t.string   "unmjobs_name"
+    t.string   "student_research_assistant"
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
+    t.boolean  "open"
+    t.boolean  "active"
+    t.boolean  "closed"
+    t.integer  "advisor_id"
   end
 
   create_table "students", :force => true do |t|
-    t.string "firstName"
-    t.string "lastName"
-    t.string "email"
-    t.string "minor"
-    t.string "major"
-    t.decimal "GPA"
-    t.text "interests"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.integer "research_id"
+    t.string   "firstName"
+    t.string   "lastName"
+    t.string   "email"
+    t.string   "minor"
+    t.string   "major"
+    t.decimal  "GPA"
+    t.text     "interests"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "research_id"
   end
 
   create_table "users", :force => true do |t|
