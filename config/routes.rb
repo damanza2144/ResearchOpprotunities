@@ -1,12 +1,16 @@
 ResearchOpprotunities::Application.routes.draw do
 
+  devise_for :users
+
   get "profile/index"
 
-  resources :students
-  
-  resources :researches
+  resources :students do
+    resources :researches
+  end
 
-  resources :advisors
+  resources :advisors do
+    resources :researches
+  end
 
   root :to => 'profile#index', :as => 'profile'
 

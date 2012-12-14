@@ -17,6 +17,7 @@ class AdvisorsController < ApplicationController
 	def show
 
 		@advisor = Advisor.find(params[:id])
+		@researches = @advisor.researches
 
 		respond_to do |format|
 			format.html # show.html.erb
@@ -74,7 +75,7 @@ class AdvisorsController < ApplicationController
 		respond_to do |format|
 
 			if @advisor.update_attributes(params[:advisor])
-        
+
 				format.html { redirect_to @advisor, notice: 'Advisor was successfully updated.' }
 				format.json { head :no_content }
 
